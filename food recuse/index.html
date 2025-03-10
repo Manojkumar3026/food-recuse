@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Rescue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Food Rescue</h1>
+        <nav>
+            <ul>
+                <li><a href="#ngo-list">NGO Organizations</a></li>
+                <li><a href="#hotel-list">Hotel List</a></li>
+                <li><a href="#registration">Registration Form</a></li>
+                <li><a href="#rewards">User Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="ngo-list">
+        <h2>NGO Organizations in Kancheepuram</h2>
+        <div id="ngoContainer"></div>
+    </section>
+
+    <section id="hotel-list">
+        <h2>Hotels Willing to Donate Food</h2>
+        <div id="hotelContainer"></div>
+    </section>
+
+    <section id="registration">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <textarea id="address" placeholder="Address" required></textarea>
+            <label>
+                <input type="checkbox" id="willing"> Willing to Donate
+            </label>
+            <input type="text" id="ngoNearby" placeholder="NGO Nearby" required>
+            <input type="text" id="license" placeholder="License" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="rewards">
+        <h2>User Rewards</h2>
+        <div id="rewardsContainer">
+            <h3>Milestones</h3>
+    <ul>
+        <li>Level 1: $10</li>
+        <li>Level 2: $20</li>
+        <li>Level 3: $30</li>
+        <!-- Add up to Level 10 -->
+    </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
